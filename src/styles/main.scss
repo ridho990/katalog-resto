@@ -431,3 +431,34 @@ a {
 		margin-top: 0.8rem;
 	}
 }
+
+// ini bagian rekomendasi resto populer
+
+// ini bagian galeri resto
+.galeri-resto {
+	background-color: #fff9f8;
+}
+
+.galeri-resto__wrapper-galeri {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 128px);
+	gap: 1rem;
+}
+
+.galeri-resto__wrapper-img {
+	background-color: #fb8500;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.galeri-2 {
+	grid-row: span 2;
+}
+
+.galeri-4 {
+	grid-column: span 2;
+}

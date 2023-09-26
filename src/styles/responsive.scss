@@ -119,6 +119,25 @@
 	.card-small {
 		flex-basis: 47%;
 	}
+
+	// ini bagian galeri
+	.galeri-resto__wrapper-galeri {
+		gap: 1.5rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 148px);
+	}
+
+	.galeri-4 {
+		grid-column: span 1;
+	}
+
+	.galeri-5 {
+		grid-row: span 2;
+	}
+
+	.galeri-6 {
+		grid-column: span 2;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -149,5 +168,10 @@
 
 	.card-small {
 		flex-basis: 22%;
+	}
+
+	// ini bagian section resto
+	.galeri-resto__wrapper-galeri {
+		grid-template-rows: repeat(3, 228px);
 	}
 }
