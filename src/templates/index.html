@@ -28,12 +28,17 @@
 		/>
 	</head>
 	<body>
-		<a href="#maincontent" class="skip-link text-white">Daftar Resto</a>
+		<a
+			href="#maincontent"
+			class="skip-link text-white"
+			title="Navigasi ke section konten utama (rekomendasi resto)"
+			>Daftar Resto</a
+		>
 		<header class="header flex-row padding-x-content">
 			<div class="header__logo-wrapper flex-row">
 				<img
 					src="./images/logo-eatexlporer.svg"
-					alt=""
+					alt="Logo EatExplorer"
 					class="header__logo-img"
 				/>
 				<span class="header__logo-name text-2xl text-white">EatExplorer</span>
@@ -47,13 +52,28 @@
 			<nav class="header__navbar">
 				<ul class="header__navbar-wrapper">
 					<li class="header__navbar-list">
-						<a href="#" class="header__navbar-link text-white">Home</a>
+						<a
+							href="./index.html"
+							class="header__navbar-link text-white"
+							title="Navigasi ke halaman home"
+							>Home</a
+						>
 					</li>
 					<li class="header__navbar-list">
-						<a href="#" class="header__navbar-link text-white">Favorite</a>
+						<a
+							href="#"
+							class="header__navbar-link text-white"
+							title="Navigasi ke halaman Favorite"
+							>Favorite</a
+						>
 					</li>
 					<li class="header__navbar-list">
-						<a href="#" class="header__navbar-link text-white">About Us</a>
+						<a
+							href="https://www.linkedin.com/in/ridho-ahmad-fauzi/"
+							class="header__navbar-link text-white"
+							title="Navigasi ke linkedin Ridho Ahmad Fauzi"
+							>About Us</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -101,7 +121,10 @@
 							2,500 user merasa puas dengan rekomendasi kami
 						</p>
 					</div>
-					<a href="#" class="hero__nav text-white"
+					<a
+						href="#maincontent"
+						class="hero__nav text-white"
+						title="Navigasi ke section konten utama (rekomendasi resto)"
 						>Lihat Semua Restoran <i class="fa-solid fa-arrow-right-long"></i
 					></a>
 				</div>
@@ -264,7 +287,10 @@
 				</div>
 			</section>
 
-			<section class="resto-populer padding-x-content padding-y-content">
+			<section
+				id="maincontent"
+				class="resto-populer padding-x-content padding-y-content"
+			>
 				<div class="title-section">
 					<h2 class="text-navy text-3xl">
 						<span class="text-yellow">Restoran Populer</span> Pilihan Kami
@@ -275,7 +301,10 @@
 					</p>
 				</div>
 				<div class="resto-populer__wrapper-card"></div>
-				<button class="resto-populer__btn-view bg-navy text-white">
+				<button
+					class="resto-populer__btn-view bg-navy text-white"
+					title="Klik untuk dapat melihat semua"
+				>
 					Lihat Semua
 				</button>
 			</section>
@@ -291,37 +320,37 @@
 				</div>
 				<div class="galeri-resto__wrapper-galeri">
 					<div class="galeri-resto__wrapper-img galeri-1">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
 					</div>
 					<div class="galeri-resto__wrapper-img galeri-2">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
 					</div>
 					<div class="galeri-resto__wrapper-img galeri-3">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
 					</div>
 					<div class="galeri-resto__wrapper-img galeri-4">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
 					</div>
 					<div class="galeri-resto__wrapper-img galeri-5">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
 					</div>
 					<div class="galeri-resto__wrapper-img galeri-6">
-						<img alt="Foto galeri resto" class="galeri-resto__img" />
+						<img class="galeri-resto__img" />
 						<div class="overlay-img">
 							<h3 class="overlay-img__nama-resto text-white"></h3>
 						</div>
@@ -407,7 +436,7 @@
 				<div class="footer__logo-wrapper flex-row">
 					<img
 						src="./images/logo-eatexlporer.svg"
-						alt=""
+						alt="Logo EatExplorer"
 						class="footer__logo-img"
 					/>
 					<span class="footer__logo-name text-2xl text-white">EatExplorer</span>
@@ -425,18 +454,32 @@
 			<div class="footer__perusahaan">
 				<h2 class="text-xl text-white">Perusahaan</h2>
 				<ul class="wrapper-list__perusahaan">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Terms</a></li>
-					<li><a href="#">Lisensi</a></li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman About Us">About Us</a>
+					</li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Terms">Terms</a>
+					</li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Lisensi">Lisensi</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__kontak-kami">
 				<h2 class="text-xl text-white">Kontak Kami</h2>
 				<ul class="wrapper-list__kontak-kami">
-					<li><a href="#">Mitra</a></li>
-					<li><a href="#">Kerja Sama</a></li>
-					<li><a href="#">Sponsor</a></li>
-					<li><a href="#">Pricing</a></li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Mitra">Mitra</a>
+					</li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Kerja Sama">Kerja Sama</a>
+					</li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Sponsor">Sponsor</a>
+					</li>
+					<li>
+						<a href="#" title="untuk pergi ke halaman Pricing">Pricing</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__ulasan flex-col">
@@ -451,7 +494,13 @@
 						id="ulasan"
 						placeholder="Ulasan Kamu"
 					/>
-					<button type="submit" class="bg-pink text-white">Submit</button>
+					<button
+						type="submit"
+						class="bg-pink text-white"
+						title="Klik untuk submit ulasan"
+					>
+						Submit
+					</button>
 				</form>
 			</div>
 		</footer>

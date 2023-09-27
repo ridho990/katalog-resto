@@ -19,20 +19,22 @@ class cardResto extends HTMLElement {
 							/>
 						</div>
 						<div class="card-resto-populer__bottom">
-							<div class="card-resto-populer__rating-info flex-row">
-								<span class="rating-resto-angka text-white ${bgColorRating}">${rating}</span>
-								<p class="rating-resto-word ${colorTextReview}">${textReview}</p>
-								<p class="review-resto text-navy">10k Review</p>
-							</div>
-							<div class="card-resto-populer__profile-resto">
-								<h3 class="text-navy text-2xl">${this._cardData.name}</h3>
-								<h4 class="text-navy text-lg">${this._cardData.type} Resto'</h4>
-								<p class="text-navy">${this._cardData.city}</p>
-								<hr />
-							</div>
-							<p class="text-navy">
-								${this._cardData.description}
-							</p>
+							<a href="#" class="card-resto-populer__navigasi" title="Menuju halaman resto ${this._cardData.name}">
+								<div class="card-resto-populer__rating-info flex-row">
+									<span class="rating-resto-angka text-white ${bgColorRating}">${rating}</span>
+									<p class="rating-resto-word ${colorTextReview}">${textReview}</p>
+									<p class="review-resto text-navy">10k Review</p>
+								</div>
+								<div class="card-resto-populer__profile-resto">
+									<h3 class="text-navy text-2xl">${this._cardData.name}</h3>
+									<h4 class="text-navy text-lg">${this._cardData.type} Resto'</h4>
+									<p class="text-navy">${this._cardData.city}</p>
+									<hr />
+								</div>
+								<p class="card-resto-populer__description text-navy">
+									${this._cardData.description}
+								</p>
+							</a>
 						</div>
 					</article>
 		`;
