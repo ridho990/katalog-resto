@@ -41,7 +41,7 @@ const main = () => {
 		}
 	};
 
-	const renderAll = () => {
+	const renderAllCard = () => {
 		const wrapperCard = document.querySelector(".resto-populer__wrapper-card");
 		const btnViewAll = document.querySelector(".resto-populer__btn-view");
 		let btnActive = 0;
@@ -59,10 +59,22 @@ const main = () => {
 			}
 		});
 	};
+
+	const renderFotoGallery = () => {
+		const galeriImg = document.querySelectorAll(".galeri-resto__img");
+		const overlayTitle = document.querySelectorAll(".overlay-img__nama-resto");
+		const dataResto = data.restaurants;
+		for (let i = 0; i < 6; i++) {
+			galeriImg[i].src = dataResto[i].pictureId;
+			overlayTitle[i].innerText = dataResto[i].name;
+		}
+	};
+
 	renderResto();
 	scrollNavbar();
 	openNavbar();
-	renderAll();
+	renderAllCard();
+	renderFotoGallery();
 };
 
 export default main;

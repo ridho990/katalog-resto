@@ -474,10 +474,24 @@ a {
 
 .card-resto-populer__img {
 	aspect-ratio: 1.575/1;
+	overflow: hidden;
 
 	& img {
 		width: 100%;
 		height: 100%;
+		transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		-o-transition: all 1s ease;
+	}
+
+	& img:hover {
+		transform: scale(1.2) rotate(2.5deg);
+		-webkit-transform: scale(1.2) rotate(2.5deg);
+		-moz-transform: scale(1.2) rotate(2.5deg);
+		-ms-transform: scale(1.2) rotate(2.5deg);
+		-o-transform: scale(1.2) rotate(2.5deg);
 	}
 }
 
@@ -550,12 +564,55 @@ a {
 }
 
 .galeri-resto__wrapper-img {
+	position: relative;
 	background-color: #fb8500;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+	overflow: hidden;
+
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	-moz-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	-ms-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	-o-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover {
+		transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		-o-transform: scale(0.95);
+	}
+
+	& img {
+		transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+		-webkit-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+		-moz-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+		-ms-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+		-o-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	& img:hover {
+		transform: rotate(2deg) scale(1.25);
+		-webkit-transform: rotate(2deg) scale(1.25);
+		-moz-transform: rotate(2deg) scale(1.25);
+		-ms-transform: rotate(2deg) scale(1.25);
+		-o-transform: rotate(2deg) scale(1.25);
+	}
+
+	&:hover .overlay-img {
+		bottom: 0;
+	}
+}
+
+.galeri-resto__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .galeri-2 {
@@ -564,6 +621,31 @@ a {
 
 .galeri-4 {
 	grid-column: span 2;
+}
+
+.overlay-img {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 5rem;
+	padding: 2.5rem 1rem;
+	background: linear-gradient(
+		0deg,
+		rgba(2, 48, 71, 1) 0%,
+		rgba(0, 188, 212, 0) 100%
+	);
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+
+	& h3 {
+		font-size: 0.8rem;
+		font-weight: 500;
+		opacity: 0.9;
+	}
 }
 
 // ini bagian ulasan

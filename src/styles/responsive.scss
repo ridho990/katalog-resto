@@ -144,6 +144,15 @@
 		grid-column: span 2;
 	}
 
+	.overlay-img {
+		padding: 2rem 1.2rem;
+
+		& h3 {
+			font-size: 1.15rem;
+			font-weight: 500;
+		}
+	}
+
 	// ini bagian ulasan pengguna
 	.card-ulasan {
 		flex-basis: 47%;
@@ -194,6 +203,15 @@
 	// ini bagian section resto
 	.galeri-resto__wrapper-galeri {
 		grid-template-rows: repeat(3, 228px);
+	}
+
+	.overlay-img {
+		padding: 2rem;
+
+		& h3 {
+			font-size: 1.25rem;
+			font-weight: 600;
+		}
 	}
 
 	// ini bagian ulasan pengguna
