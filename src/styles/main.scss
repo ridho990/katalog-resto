@@ -45,6 +45,10 @@ a {
 }
 
 // Utility
+.hidden {
+	display: none;
+}
+
 .flex-row {
 	display: flex;
 	flex-direction: row;
@@ -89,6 +93,14 @@ a {
 	color: white;
 }
 
+.text-red {
+	color: red;
+}
+
+.text-blue {
+	color: #2e60d3;
+}
+
 .bg-navy {
 	background-color: #023047;
 }
@@ -104,6 +116,15 @@ a {
 .bg-pink {
 	background-color: #df6951;
 }
+
+.bg-red {
+	background-color: red;
+}
+
+.bg-blue {
+	background-color: #2e60d3;
+}
+
 // Component
 .title-section {
 	text-align: center;
@@ -157,15 +178,18 @@ a {
 	align-items: center;
 }
 
-.header__logo-wrapper {
+.header__logo-wrapper,
+.footer__logo-wrapper {
 	align-items: center;
 }
 
-.header__logo-img {
+.header__logo-img,
+.footer__logo-img {
 	height: 2.5rem;
 }
 
-.header__logo-name {
+.header__logo-name,
+.footer__logo-name {
 	margin: 0.2rem 0 0 0.5rem;
 	font-weight: 600;
 }
@@ -317,7 +341,6 @@ a {
 }
 
 // ini adalah bagian section info
-
 .info__wrappper-image--mobile,
 .info__wrappper-image {
 	width: 70%;
@@ -433,6 +456,86 @@ a {
 }
 
 // ini bagian rekomendasi resto populer
+.resto-populer__wrapper-card {
+	display: grid;
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.card-resto-populer {
+	box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.1);
+	border-radius: 0.6rem;
+	-webkit-border-radius: 0.6rem;
+	-moz-border-radius: 0.6rem;
+	-ms-border-radius: 0.6rem;
+	-o-border-radius: 0.6rem;
+	overflow: hidden;
+}
+
+.card-resto-populer__img {
+	aspect-ratio: 1.575/1;
+
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.card-resto-populer__bottom {
+	padding: 0.7rem 1.3rem 1rem;
+
+	& > p {
+		line-height: 1.6rem;
+	}
+}
+
+.card-resto-populer__rating-info {
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.rating-resto-angka {
+	font-weight: 600;
+	padding: 5px 12px;
+	border-radius: 5px 5px 5px 0;
+	-webkit-border-radius: 5px 5px 5px 0;
+	-moz-border-radius: 5px 5px 5px 0;
+	-ms-border-radius: 5px 5px 5px 0;
+	-o-border-radius: 5px 5px 5px 0;
+}
+
+.rating-resto-word {
+	font-weight: 600;
+	margin: 0 0.8rem;
+}
+
+.review-resto {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.card-resto-populer__profile-resto {
+	& h4 {
+		font-weight: 500;
+	}
+
+	& hr {
+		margin: 0.8rem 0;
+	}
+}
+
+.resto-populer__btn-view {
+	display: block;
+	margin: 0 auto;
+	padding: 0.7rem 1rem;
+	font-weight: 600;
+	border-radius: 6px;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
 
 // ini bagian galeri resto
 .galeri-resto {
@@ -461,4 +564,136 @@ a {
 
 .galeri-4 {
 	grid-column: span 2;
+}
+
+// ini bagian ulasan
+.ulasan__wrapper-card {
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.card-ulasan {
+	flex: 1;
+	flex-basis: 100%;
+	padding: 1.5rem 1rem;
+	box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+}
+
+.card-ulasan__profile {
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.profile-img {
+	margin-right: 0.8rem;
+	width: 3rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.card-ulasan__nama-profesi {
+	& p {
+		font-size: 0.8rem;
+	}
+}
+
+.card-ulasan__wrapper-ulasan {
+	& p {
+		font-weight: 500;
+		opacity: 0.9;
+	}
+}
+
+// ini bagian footer
+.footer {
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.footer__profile-website {
+	align-items: center;
+	text-align: center;
+}
+
+.footer__ulasan {
+	align-items: center;
+	margin: -0.8rem auto 0;
+
+	& input,
+	& button {
+		padding: 0.75rem 1rem;
+		outline: none;
+		border: none;
+		border-radius: 0.4rem;
+		-webkit-border-radius: 0.4rem;
+		-moz-border-radius: 0.4rem;
+		-ms-border-radius: 0.4rem;
+		-o-border-radius: 0.4rem;
+	}
+
+	& button {
+		font-weight: 600;
+		margin-left: 0.5rem;
+	}
+
+	// & input:focus {
+	// 	outline: #ffb703;
+	// }
+
+	// & button:focus {
+	// 	outline: #fff8ef;
+	// }
+}
+
+.profile-website__description {
+	margin: 1.5rem 0;
+	line-height: 1.8rem;
+	font-weight: 500;
+}
+
+.footer__wrapper-sosmed {
+	& i {
+		color: white;
+		font-size: 1.5rem;
+		margin-right: 0.7rem;
+	}
+
+	& i:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.footer h2 {
+	margin-bottom: 0.8rem;
+}
+
+.footer li {
+	list-style: none;
+	padding: 0.5rem 0;
+}
+
+.footer a {
+	color: white;
+	font-weight: 500;
+	opacity: 0.8;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+
+	&:hover {
+		opacity: 1;
+	}
 }

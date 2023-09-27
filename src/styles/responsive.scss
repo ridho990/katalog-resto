@@ -120,6 +120,11 @@
 		flex-basis: 47%;
 	}
 
+	// ini bagain resto populer
+	.resto-populer__wrapper-card {
+		grid-template-columns: 1fr 1fr;
+	}
+
 	// ini bagian galeri
 	.galeri-resto__wrapper-galeri {
 		gap: 1.5rem;
@@ -137,6 +142,18 @@
 
 	.galeri-6 {
 		grid-column: span 2;
+	}
+
+	// ini bagian ulasan pengguna
+	.card-ulasan {
+		flex-basis: 47%;
+	}
+
+	// ini bagian footer
+	.footer__profile-website {
+		align-items: flex-start;
+		text-align: left;
+		flex-basis: 30%;
 	}
 }
 
@@ -170,8 +187,33 @@
 		flex-basis: 22%;
 	}
 
+	.resto-populer__wrapper-card {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	// ini bagian section resto
 	.galeri-resto__wrapper-galeri {
 		grid-template-rows: repeat(3, 228px);
+	}
+
+	// ini bagian ulasan pengguna
+	.ulasan__wrapper-card {
+		gap: 1.5rem;
+	}
+	.card-ulasan {
+		flex-basis: 31%;
+	}
+
+	.footer__profile-website {
+		flex-basis: 25%;
+	}
+
+	.footer__ulasan {
+		align-items: flex-start;
+		margin: 0;
+
+		& h2 {
+			margin-bottom: 1.3rem;
+		}
 	}
 }

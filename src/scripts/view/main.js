@@ -1,9 +1,12 @@
+// import "../../public/data/DATA.json";
+import "../component/card-resto.js";
+import data from "../../public/data/DATA.json";
+
 const main = () => {
 	const openNavbar = () => {
 		const humburger = document.querySelector(".btn-humburger");
 		const navbar = document.querySelector(".header__navbar");
 		const btnClose = document.querySelector(".btn-x-navbar");
-		console.log(humburger);
 		humburger.addEventListener("click", function () {
 			navbar.classList.add("active-navbar");
 			humburger.classList.add("active-navbar");
@@ -28,8 +31,38 @@ const main = () => {
 		};
 	};
 
+	const renderResto = (totalRender = 3) => {
+		const wrapperCard = document.querySelector(".resto-populer__wrapper-card");
+		const dataResto = data.restaurants;
+		for (let i = 0; i < totalRender; i++) {
+			const cardResto = document.createElement("card-resto");
+			cardResto.cardData = dataResto[i];
+			wrapperCard.appendChild(cardResto);
+		}
+	};
+
+	const renderAll = () => {
+		const wrapperCard = document.querySelector(".resto-populer__wrapper-card");
+		const btnViewAll = document.querySelector(".resto-populer__btn-view");
+		let btnActive = 0;
+		btnViewAll.addEventListener("click", () => {
+			if (btnActive === 0) {
+				wrapperCard.innerHTML = "";
+				renderResto(data.restaurants.length);
+				btnViewAll.textContent = "Lebih Sedikit";
+				btnActive--;
+			} else {
+				wrapperCard.innerHTML = "";
+				renderResto();
+				btnViewAll.textContent = "Lihat Semua";
+				btnActive++;
+			}
+		});
+	};
+	renderResto();
 	scrollNavbar();
 	openNavbar();
+	renderAll();
 };
 
 export default main;
