@@ -330,7 +330,8 @@ a {
 }
 
 .hero__nav {
-	margin-top: 1.5rem;
+	margin-top: 0.5rem;
+	padding: 1rem 0;
 	font-weight: 500;
 	text-decoration: underline;
 	text-decoration-color: #ffb703;
@@ -714,6 +715,7 @@ a {
 }
 
 .footer__profile-website {
+	width: 100%;
 	align-items: center;
 	text-align: center;
 }
@@ -775,10 +777,11 @@ a {
 
 .footer li {
 	list-style: none;
-	padding: 0.5rem 0;
 }
 
 .footer a {
+	display: block;
+	padding: 0.65rem 0;
 	color: white;
 	font-weight: 500;
 	opacity: 0.8;
