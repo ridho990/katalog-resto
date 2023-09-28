@@ -70,8 +70,8 @@
 		display: none;
 	}
 
-	.header span.btn-x-navbar {
-		display: none;
+	.btn-x-navbar.active-navbar {
+		display: none !important;
 	}
 
 	.hero__wrapper {

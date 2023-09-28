@@ -217,8 +217,12 @@ a {
 	padding: 0.8rem 0;
 }
 
-.btn-humburger {
+.btn-humburger,
+.btn-x-navbar {
+	padding: 0.4rem 0 0.4rem 1.9rem;
 	font-size: 1.5rem;
+	background-color: transparent;
+	border: none;
 }
 
 .btn-humburger.active-navbar {
@@ -226,7 +230,6 @@ a {
 }
 
 .btn-x-navbar {
-	font-size: 1.5rem;
 	display: none;
 }
 
