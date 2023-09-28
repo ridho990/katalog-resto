@@ -734,6 +734,10 @@ a {
 		-o-border-radius: 0.4rem;
 	}
 
+	& input {
+		width: 168px;
+	}
+
 	& button {
 		cursor: pointer;
 		font-weight: 600;
