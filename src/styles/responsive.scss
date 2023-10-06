@@ -166,6 +166,35 @@
 		width: 400px;
 	}
 
+	/*
+		Page Detail Resto
+	*/
+
+	.hero-detail-resto .hero-wrapper {
+		height: 43vh;
+	}
+
+	.detail-resto .detail-resto__info-wrapper {
+		padding: 0rem 2rem 2rem;
+	}
+
+	.detail-resto .detail-resto__info-wrapper .info-wrapper__navigasi a,
+	.detail-resto .detail-resto__info-wrapper .info-wrapper__navigasi p,
+	.detail-resto .detail-resto__info-wrapper .info-wrapper__navigasi span {
+		font-size: 0.9rem;
+		padding-top: 1.8rem;
+		padding-bottom: 1.5rem;
+	}
+
+	div.wrapper-ulasan__name-star-date.flex-col {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.strip {
+		display: block !important;
+	}
+
 	// ini bagian footer
 	.footer__profile-website {
 		align-items: flex-start;
@@ -233,6 +262,47 @@
 	}
 	.card-ulasan {
 		flex-basis: 31%;
+	}
+
+	/* 
+		Ini bagian page detail resto
+	*/
+
+	.hero-detail-resto .hero-wrapper {
+		height: 63vh;
+	}
+
+	.detail-resto
+		.detail-resto__info-wrapper
+		.info-wrapper__ulasan-pengguna
+		.ulasan-pengguna__wrapper-form
+		.form-ulasan-user {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.detail-resto
+		.detail-resto__info-wrapper
+		.info-wrapper__ulasan-pengguna
+		.ulasan-pengguna__wrapper-form
+		#input-username {
+		width: 23.65%;
+	}
+
+	.detail-resto
+		.detail-resto__info-wrapper
+		.info-wrapper__ulasan-pengguna
+		.ulasan-pengguna__wrapper-form
+		#input-review-resto {
+		width: 60.21%;
+	}
+
+	.detail-resto
+		.detail-resto__info-wrapper
+		.info-wrapper__ulasan-pengguna
+		.ulasan-pengguna__wrapper-form
+		#btn-submit-review {
+		width: 12.05%;
 	}
 
 	.footer__profile-website {

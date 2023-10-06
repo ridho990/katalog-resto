@@ -712,7 +712,8 @@ a {
 /*
 	Page Favorite
 */
-.hero-favorite {
+.hero-favorite,
+.hero-detail-resto {
 	position: relative;
 	background: url("../public/images/heros/hero-image_4.jpg");
 	background-repeat: no-repeat;
@@ -870,7 +871,7 @@ a {
 			}
 
 			& p {
-				opacity: 0.9;
+				opacity: 0.8;
 			}
 		}
 
@@ -879,8 +880,67 @@ a {
 				font-weight: 600;
 			}
 
-			& .ulasan-pengguna__wrapper-ulasan {
-				& .wrapper-ulasan__name-star-date {
+			& .ulasan-pengguna__wrapper-ulasan-form {
+				& .ulasan-pengguna__wrapper-ulasan {
+					margin-top: 0.7rem;
+
+					& .wrapper-ulasan__name-star-date {
+						margin-bottom: 0.3rem;
+
+						& .name-star {
+							align-items: center;
+
+							& .username-reviewer {
+								font-size: 1rem;
+								font-weight: 500;
+								margin-right: 0.8rem;
+							}
+
+							& .stars i {
+								font-size: 0.9rem;
+							}
+						}
+
+						& .name-star-date__date {
+							align-items: center;
+							font-size: 0.9rem;
+							opacity: 0.8;
+
+							& .strip {
+								display: none;
+								margin: 0 0.8rem;
+							}
+						}
+					}
+
+					& .wrapper-ulasan__user-review {
+						& p {
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+
+			& .ulasan-pengguna__wrapper-form {
+				margin-top: 1rem;
+
+				& #input-username,
+				& #input-review-resto {
+					margin-bottom: 0.8rem;
+					padding: 0.75rem 1rem;
+					outline: none;
+					border: none;
+					background-color: #eeeeff;
+					border-radius: 0.4rem;
+				}
+
+				& #btn-submit-review {
+					margin-bottom: 0.8rem;
+					padding: 0.75rem 1rem;
+					outline: none;
+					border: none;
+					background-color: #df6951;
+					border-radius: 0.4rem;
 				}
 			}
 		}
