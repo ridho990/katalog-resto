@@ -121,7 +121,8 @@
 	}
 
 	// ini bagain resto populer
-	.resto-populer__wrapper-card {
+	.resto-populer__wrapper-card,
+	.wrapper-card-favorite {
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -156,6 +157,13 @@
 	// ini bagian ulasan pengguna
 	.card-ulasan {
 		flex-basis: 47%;
+	}
+
+	/*
+		Page Favorite
+	*/
+	#search-favorite {
+		width: 400px;
 	}
 
 	// ini bagian footer
@@ -200,7 +208,8 @@
 		flex-basis: 22%;
 	}
 
-	.resto-populer__wrapper-card {
+	.resto-populer__wrapper-card,
+	.wrapper-card-favorite {
 		grid-template-columns: repeat(3, 1fr);
 	}
 

@@ -461,13 +461,14 @@ a {
 }
 
 // ini bagian rekomendasi resto populer
-.resto-populer__wrapper-card {
+.resto-populer__wrapper-card,
+.wrapper-card-favorite {
 	display: grid;
 	gap: 1.5rem;
 	margin-bottom: 3rem;
 }
 
-.card-resto-populer {
+.card-info-resto {
 	box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.1);
 	border-radius: 0.6rem;
 	-webkit-border-radius: 0.6rem;
@@ -477,7 +478,7 @@ a {
 	overflow: hidden;
 }
 
-.card-resto-populer__img {
+.card-info-resto__img {
 	aspect-ratio: 1.575/1;
 	overflow: hidden;
 
@@ -500,17 +501,17 @@ a {
 	}
 }
 
-.card-resto-populer__navigasi {
+.card-info-resto__navigasi {
 	display: block;
 	padding: 0.7rem 1.3rem 1rem;
 	outline-offset: -2px;
 
-	& p.card-resto-populer__description {
+	& p.card-info-resto__description {
 		line-height: 1.6rem;
 	}
 }
 
-.card-resto-populer__rating-info {
+.card-info-resto__rating-info {
 	align-items: center;
 	margin-bottom: 0.5rem;
 }
@@ -535,7 +536,7 @@ a {
 	font-weight: 500;
 }
 
-.card-resto-populer__profile-resto {
+.card-info-resto__profile-resto {
 	& h4 {
 		font-weight: 500;
 	}
@@ -705,6 +706,184 @@ a {
 	& p {
 		font-weight: 500;
 		opacity: 0.9;
+	}
+}
+
+/*
+	Page Favorite
+*/
+.hero-favorite {
+	position: relative;
+	background: url("../public/images/heros/hero-image_4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.245);
+		backdrop-filter: blur(5px);
+		z-index: 0;
+	}
+}
+
+.hero-wrapper {
+	position: relative;
+	height: 63vh;
+	text-align: center;
+	justify-content: center;
+	z-index: 3;
+}
+
+.wrapper__search-favorite {
+	justify-content: center;
+	margin-bottom: 3rem;
+
+	& input {
+		width: 300px;
+		padding: 0.75rem 1rem;
+		outline: none;
+		border: 1.5px solid #023047;
+		border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+	}
+
+	& input:focus {
+		outline: 2px solid #ffb703;
+		outline-offset: -2px;
+	}
+}
+
+.wrapper-card-favorite {
+	margin-bottom: 0;
+}
+
+/*
+	Page Detail Resto
+*/
+.section-detail-resto {
+	position: relative;
+	z-index: 4;
+	margin-bottom: 5rem;
+}
+
+.detail-resto {
+	margin-top: -19rem;
+	box-shadow: 0px 4px 44px -5px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	overflow: hidden;
+
+	& .detail-resto__img {
+		width: 100%;
+		height: 21rem;
+
+		& img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	& .detail-resto__info-wrapper {
+		padding: 0rem 1.2rem 1.2rem;
+
+		& .info-wrapper__navigasi {
+			& a,
+			& p,
+			& span {
+				font-size: 0.8rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+
+			& a {
+				display: block;
+				padding-right: 6px;
+			}
+
+			& p {
+				margin-left: 6px;
+			}
+		}
+
+		& .info-wrapper__rating-info {
+			align-items: center;
+			margin-bottom: 0.5rem;
+
+			& .rating-info-angka {
+				font-weight: 600;
+				padding: 5px 12px;
+				border-radius: 5px 5px 5px 0;
+				-webkit-border-radius: 5px 5px 5px 0;
+				-moz-border-radius: 5px 5px 5px 0;
+				-ms-border-radius: 5px 5px 5px 0;
+				-o-border-radius: 5px 5px 5px 0;
+			}
+
+			& .rating-info-word {
+				font-weight: 600;
+				margin: 0 0.8rem;
+			}
+		}
+
+		& .info-wrapper__profile-resto {
+			& h2 {
+				font-weight: 500;
+			}
+
+			& hr {
+				height: 1px;
+				margin: 0.8rem 0;
+				border: none;
+				background-color: #dfdfdf;
+			}
+		}
+
+		& .info-wrapper__desc-n-menu {
+			& .desc-n-menu__drink {
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			& hr {
+				height: 1px;
+				margin: 0.8rem 0;
+				border: none;
+				background-color: #dfdfdf;
+			}
+
+			& h2 {
+				font-weight: 600;
+			}
+
+			& p {
+				opacity: 0.9;
+			}
+		}
+
+		& .info-wrapper__ulasan-pengguna {
+			& h2 {
+				font-weight: 600;
+			}
+
+			& .ulasan-pengguna__wrapper-ulasan {
+				& .wrapper-ulasan__name-star-date {
+				}
+			}
+		}
 	}
 }
 

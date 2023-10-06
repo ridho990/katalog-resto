@@ -1,4 +1,3 @@
-// import "../../public/data/DATA.json";
 import "../component/card-resto.js";
 import data from "../../public/data/DATA.json";
 
