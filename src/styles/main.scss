@@ -543,7 +543,9 @@ a {
 
 	& hr {
 		margin: 0.8rem 0;
-		border-color: #dfdfdf !important;
+		height: 1px;
+		border: none;
+		background-color: #dfdfdf;
 	}
 }
 
@@ -749,6 +751,11 @@ a {
 		width: 300px;
 		padding: 0.75rem 1rem;
 		outline: none;
+		font-size: 1rem;
+		font-weight: 500;
+		color: #023047;
+		background-color: #eeeeff;
+		// border: none;
 		border: 1.5px solid #023047;
 		border-radius: 50px;
 		-webkit-border-radius: 50px;
@@ -934,9 +941,17 @@ a {
 					border-radius: 0.4rem;
 				}
 
+				& #input-username:focus,
+				& #input-review-resto:focus,
+				& #btn-submit-review:focus {
+					outline: 2px solid #ffb703;
+					outline-offset: -2px;
+				}
+
 				& #btn-submit-review {
 					margin-bottom: 0.8rem;
 					padding: 0.75rem 1rem;
+					cursor: pointer;
 					outline: none;
 					border: none;
 					background-color: #df6951;
